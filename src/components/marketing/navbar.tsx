@@ -1,13 +1,11 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { BotMessageSquare, Menu, X } from "lucide-react"
 import { useState } from "react"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const pathname = usePathname()
 
   const navLinks = [
     { name: "Features", href: "#features" },

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Play, Pause, SkipForward, Users, Megaphone, BarChart3, Bot } from "lucide-react"
+import { Users, Megaphone, BarChart3, Bot } from "lucide-react"
 
 const demoScreens = [
   {
@@ -124,7 +124,6 @@ const demoScreens = [
 
 export function Demo() {
   const [activeScreen, setActiveScreen] = useState(0)
-  const [isPlaying, setIsPlaying] = useState(false)
 
   const current = demoScreens[activeScreen]
   const Icon = current.icon

@@ -36,7 +36,7 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">Loved by growth teams worldwide</h2>
-          <p className="mt-4 text-slate-400 text-lg">Don't just take our word for it.</p>
+          <p className="mt-4 text-slate-400 text-lg">Don&apos;t just take our word for it.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
@@ -53,7 +53,7 @@ export function Testimonials() {
                   <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-slate-300 leading-relaxed flex-1">"{t.content}"</p>
+              <p className="text-slate-300 leading-relaxed flex-1">&ldquo;{t.content}&rdquo;</p>
               <div className="flex items-center gap-3 pt-4 border-t border-white/5">
                 <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${t.gradient} flex items-center justify-center text-white text-sm font-bold shrink-0`}>
                   {t.initials}
